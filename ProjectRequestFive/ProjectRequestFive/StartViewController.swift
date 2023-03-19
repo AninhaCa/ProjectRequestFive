@@ -10,6 +10,7 @@ import UIKit
 class StartViewController: UIViewController {
 
     @IBOutlet var labelStart: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         labelStart.text = "PIZZARIA"

@@ -36,6 +36,7 @@ class PriceViewController: UIViewController {
     @IBAction func follow(_ sender: Any) {
         if let rating = self.storyboard?.instantiateViewController(identifier: "rating") as? RatingViewController {
             rating.ratingPizza = self.pricePizza
+            follow.backgroundColor = .red
             self.navigationController?.pushViewController(rating, animated: true)
         }
     }
