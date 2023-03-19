@@ -14,6 +14,8 @@
 		778DF32929C7B18100EB84E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778DF32829C7B18100EB84E7 /* Assets.xcassets */; };
 		778DF32C29C7B18100EB84E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778DF32A29C7B18100EB84E7 /* LaunchScreen.storyboard */; };
 		779D578A29C7B24D0099E560 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D578929C7B24D0099E560 /* Pizza.swift */; };
+		779D578D29C7BB180099E560 /* CustomXIBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D578B29C7BB180099E560 /* CustomXIBCell.swift */; };
+		779D578E29C7BB180099E560 /* CustomXIBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779D578C29C7BB180099E560 /* CustomXIBCell.xib */; };
 		E4FAA60119ABBB9BA053AE09 /* Pods_ProjectRequestFive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CEF6FA25E049991AD84238 /* Pods_ProjectRequestFive.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		778DF32B29C7B18100EB84E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778DF32D29C7B18100EB84E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779D578929C7B24D0099E560 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		779D578B29C7BB180099E560 /* CustomXIBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXIBCell.swift; sourceTree = "<group>"; };
+		779D578C29C7BB180099E560 /* CustomXIBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXIBCell.xib; sourceTree = "<group>"; };
 		94CEF6FA25E049991AD84238 /* Pods_ProjectRequestFive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectRequestFive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		971A90A8A6AEA5AA90D33AC3 /* Pods-ProjectRequestFive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectRequestFive.debug.xcconfig"; path = "Target Support Files/Pods-ProjectRequestFive/Pods-ProjectRequestFive.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +73,8 @@
 				778DF32129C7B18000EB84E7 /* SceneDelegate.swift */,
 				779D578929C7B24D0099E560 /* Pizza.swift */,
 				778DF32329C7B18000EB84E7 /* ViewController.swift */,
+				779D578B29C7BB180099E560 /* CustomXIBCell.swift */,
+				779D578C29C7BB180099E560 /* CustomXIBCell.xib */,
 				778DF32529C7B18000EB84E7 /* Main.storyboard */,
 				778DF32829C7B18100EB84E7 /* Assets.xcassets */,
 				778DF32A29C7B18100EB84E7 /* LaunchScreen.storyboard */,
@@ -153,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779D578E29C7BB180099E560 /* CustomXIBCell.xib in Resources */,
 				778DF32C29C7B18100EB84E7 /* LaunchScreen.storyboard in Resources */,
 				778DF32929C7B18100EB84E7 /* Assets.xcassets in Resources */,
 				778DF32729C7B18000EB84E7 /* Main.storyboard in Resources */,
@@ -210,6 +217,7 @@
 			files = (
 				779D578A29C7B24D0099E560 /* Pizza.swift in Sources */,
 				778DF32429C7B18000EB84E7 /* ViewController.swift in Sources */,
+				779D578D29C7BB180099E560 /* CustomXIBCell.swift in Sources */,
 				778DF32029C7B18000EB84E7 /* AppDelegate.swift in Sources */,
 				778DF32229C7B18000EB84E7 /* SceneDelegate.swift in Sources */,
 			);
