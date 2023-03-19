@@ -16,18 +16,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmU-wX-1Vp">
-                        <rect key="frame" x="16" y="6" width="288" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmU-wX-1Vp">
+                        <rect key="frame" x="16" y="0.0" width="288" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Dt9-6l-oYm"/>
+                            <constraint firstAttribute="width" constant="288" id="jc1-Vn-p1n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a8G-Sj-DtZ">
-                        <rect key="frame" x="40" y="68" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a8G-Sj-DtZ">
+                        <rect key="frame" x="16" y="64" width="288" height="152"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="288" id="2jf-1n-PTo"/>
+                            <constraint firstAttribute="height" constant="152" id="O5p-0r-Eo6"/>
+                        </constraints>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" red="0.55828784190000003" green="0.45324776519999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="dmU-wX-1Vp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="3zG-Ua-Wbj"/>
+                    <constraint firstAttribute="bottom" secondItem="a8G-Sj-DtZ" secondAttribute="bottom" id="6g5-Uf-zgf"/>
+                    <constraint firstItem="a8G-Sj-DtZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="OcD-Xa-gdy"/>
+                    <constraint firstAttribute="trailing" secondItem="a8G-Sj-DtZ" secondAttribute="trailing" constant="16" id="Pxb-pb-20x"/>
+                    <constraint firstItem="dmU-wX-1Vp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nNl-gf-cSA"/>
+                    <constraint firstAttribute="trailing" secondItem="dmU-wX-1Vp" secondAttribute="trailing" constant="16" id="wsN-IP-YhP"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
