@@ -9,21 +9,15 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet var labelStart: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        labelStart.text = "PIZZARIA"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func start(_ sender: Any) {
+        if let navigation = self.storyboard?.instantiateViewController(identifier: "navi") {
+            self.present(navigation, animated: true)
+        }
     }
-    */
-
 }
