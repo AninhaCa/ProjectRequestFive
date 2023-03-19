@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     func setupTableView() {
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UINib(nibName: "CustomXIBCell", bundle: nil), forCellReuseIdentifier: "cellXIB")
         requestPizza()
     }
@@ -47,5 +48,14 @@ extension ViewController: UITableViewDataSource {
         }
         
         return UITableViewCell()
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let price = self.storyboard?.instantiateViewController(identifier: "price") as? PriceViewController {
+            price.pricePizza = self.arrayPizza?[indexPath.row]
+            self.navigationController?.pushViewController(price, animated: true)
+        }
     }
 }
